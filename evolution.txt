@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolution of the Engine I4, V4, V6, V8, V12 &amp; W16 Explained | The Engine</title>
+<meta name="description" content="From inline-four to Bugatti's sixteen-cylinder W16: a visual timeline of engine architectures I4, V4, V6, V8, V12 and W16 with real specs and photos.">
+<meta name="keywords" content="engine types, V4 engine, V6 engine, V8 engine, V12 engine, W16 engine, engine evolution, cylinder layouts">
+<meta name="robots" content="index, follow">
+<meta name="author" content="The Engine">
+<link rel="canonical" href="https://your-domain.com/evolution.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="The Engine">
+<meta property="og:title" content="Evolution of the Engine — I4, V4, V6, V8, V12 & W16 Explained">
+<meta property="og:description" content="A visual timeline of engine architectures, from inline-four to Bugatti's sixteen-cylinder W16, with real specs and photos.">
+<meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari_V12_engine.jpg">
+<meta property="og:url" content="https://your-domain.com/evolution.html">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Evolution of the Engine I4, V4, V6, V8, V12 & W16 Explained">
+<meta name="twitter:description" content="A visual timeline of engine architectures, from inline-four to Bugatti's sixteen-cylinder W16.">
+<meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari_V12_engine.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Evolution of the Engine",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Inline-Four (I4)"},
+    {"@type":"ListItem","position":2,"name":"V4"},
+    {"@type":"ListItem","position":3,"name":"V6"},
+    {"@type":"ListItem","position":4,"name":"V8"},
+    {"@type":"ListItem","position":5,"name":"V12"},
+    {"@type":"ListItem","position":6,"name":"W16"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"History","item":"https://your-domain.com/index.html"},
+    {"@type":"ListItem","position":2,"name":"Evolution","item":"https://your-domain.com/evolution.html"},
+    {"@type":"ListItem","position":3,"name":"Cars","item":"https://your-domain.com/cars.html"},
+    {"@type":"ListItem","position":4,"name":"Drift Lab","item":"https://your-domain.com/game.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> The Engine</div>
+    <div class="navlinks">
+      <a href="index.html">01 History</a>
+      <a href="evolution.html">02 Evolution</a>
+      <a href="cars.html">03 Cars</a>
+      <a href="game.html">04 Drift Lab</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="progress-rail"><div class="progress-fill"></div></div>
+
+<main>
+<header class="hero" style="padding:100px 0 70px;">
+  <div class="blueprint"></div>
+  <div class="wrap">
+    <span class="eyebrow">Page 02 — Evolution</span>
+    <h1 style="font-size:clamp(2.4rem,6vw,4.6rem);">FROM ONE<br>CYLINDER TO <em>SIXTEEN</em></h1>
+    <p class="hero-sub">Every extra cylinder is a different answer to the same question: how do you turn
+      controlled explosions into smooth, usable power? Walk the timeline the count on the left is not
+      decoration, it's the whole story.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="timeline">
+
+      <!-- I4 -->
+      <div class="tl-item reveal">
+        <div class="tl-cyl mono">I4</div>
+        <div class="tl-card">
+          <span class="tag">Where it all scaled up</span>
+          <h3>Inline-Four</h3>
+          <div class="tl-grid">
+            <div>
+              <p>Four cylinders in a single straight row sharing one crankshaft. It's the simplest way to build
+                a "real" multi cylinder engine cheap to manufacture, compact, and smooth enough for everyday
+                driving. It became the default engine for the world's economy cars, hot hatches and everyday
+                commuters, and it's the layout most people learn to drive on without ever knowing its name.</p>
+              <p>Because it's narrow and short, it fits transversely under a hood with room to spare which is
+                exactly why it became the backbone of mass-market motoring through the 20th century.</p>
+            </div>
+            <div>
+              <figure class="figure">
+                <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Buda_four_cylinder_engine_(1920).jpg" alt="Early inline-four cylinder engine">
+                <figcaption>An early production inline-four cylinder engine block</figcaption>
+              </figure>
+              <div class="spec-list" style="margin-top:14px;">
+                <div><b>Cylinders</b><span>4 in a row</span></div>
+                <div><b>Character</b><span>Efficient, compact, affordable</span></div>
+                <div><b>Found in</b><span>Hatchbacks, sedans, most motorcycles</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- V4 -->
+      <div class="tl-item reveal">
+        <div class="tl-cyl mono">V4</div>
+        <div class="tl-card">
+          <span class="tag">Compact power, uneven heartbeat</span>
+          <h3>V4</h3>
+          <div class="tl-grid">
+            <div>
+              <p>Take a four cylinder engine and fold it into a narrow "V" instead of a straight line, and you get
+                something dramatically shorter ideal when space is tight. V4s are rarer in cars than in
+                motorcycles, where Honda's VF/VFR line popularized the layout in the early 1980s for its
+                compactness and near perfect primary balance at a 90° bank angle.</p>
+              <p>The tradeoff is character: depending on the crank design, a V4 can fire unevenly, giving it a
+                distinctive, lumpy exhaust note that racers and riders have come to love rather than tolerate.</p>
+            </div>
+            <div>
+              <figure class="figure">
+                <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/2000_Honda_VFR800_V4_engine_with_right_crankcase_cover_removed.jpg" alt="Honda VFR800 V4 engine">
+                <figcaption>Honda VFR800 90° V4 engine, crankcase cover removed</figcaption>
+              </figure>
+              <div class="spec-list" style="margin-top:14px;">
+                <div><b>Bank angle</b><span>Commonly 90°</span></div>
+                <div><b>Character</b><span>Narrow, distinctive uneven note</span></div>
+                <div><b>Found in</b><span>Sport motorcycles, select sports cars</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- V6 -->
+      <div class="tl-item reveal">
+        <div class="tl-cyl mono">V6</div>
+        <div class="tl-card">
+          <span class="tag">The practical middle ground</span>
+          <h3>V6</h3>
+          <div class="tl-grid">
+            <div>
+              <p>The V6 became the workhorse "step-up" engine of the automotive world. Short enough to fit where
+                a straight six never could, it offered more power and a smoother delivery than a four cylinder
+                without the length penalty of an inline six. The Lancia Aurelia is widely credited as the first
+                series-production car to use one, in 1950; Buick's 1962 V6 helped popularize the layout in
+                America.</p>
+              <p>By the 1990s, V6 had overtaken straight six as the most common six cylinder configuration on
+                the road the sensible choice between economy and muscle.</p>
+            </div>
+            <div>
+              <figure class="figure">
+                <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/3100_V6_Engine.JPG" alt="A production V6 automobile engine">
+                <figcaption>A production 60° V6 automotive engine</figcaption>
+              </figure>
+              <div class="spec-list" style="margin-top:14px;">
+                <div><b>Bank angle</b><span>Typically 60° or 90°</span></div>
+                <div><b>Character</b><span>Balanced, versatile, compact</span></div>
+                <div><b>Found in</b><span>Sedans, SUVs, sports coupes</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- V8 -->
+      <div class="tl-item reveal">
+        <div class="tl-cyl mono">V8</div>
+        <div class="tl-card">
+          <span class="tag">The sound of American muscle</span>
+          <h3>V8</h3>
+          <div class="tl-grid">
+            <div>
+              <p>Eight cylinders in two banks of four, usually at a 90° angle a layout that, with the right
+                crankshaft design, achieves near perfect primary balance while producing that unmistakable deep,
+                rolling exhaust burble. The V8 became the emotional center of muscle cars, pickup trucks and
+                classic hot rods, prized as much for its character as for its raw torque.</p>
+              <p>It remains the layout most people picture the instant someone says the word "engine" big,
+                confident, and endlessly tunable by generations of home mechanics.</p>
+            </div>
+            <div>
+              <figure class="figure">
+                <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ford_v8_custom_engine_1.JPG" alt="A Ford V8 engine">
+                <figcaption>A classic Ford derived V8 automobile engine</figcaption>
+              </figure>
+              <div class="spec-list" style="margin-top:14px;">
+                <div><b>Bank angle</b><span>Usually 90°</span></div>
+                <div><b>Character</b><span>Deep, rumbling, high torque</span></div>
+                <div><b>Found in</b><span>Muscle cars, trucks, V8 supercars</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- V12 -->
+      <div class="tl-item reveal">
+        <div class="tl-cyl mono">V12</div>
+        <div class="tl-card">
+          <span class="tag">Silk instead of thunder</span>
+          <h3>V12</h3>
+          <div class="tl-grid">
+            <div>
+              <p>Twelve cylinders means twelve tiny, overlapping power pulses instead of a handful of big ones
+                which is why a V12 doesn't shove you back in your seat so much as pour power in, smoothly, all
+                the way to a screaming redline. It's the signature engine of Ferrari and Lamborghini flagships,
+                classic Jaguars, and the wartime Rolls Royce Merlin aircraft engine that powered the Spitfire.</p>
+              <p>V12s are expensive, heavy and thirsty to build which is exactly why they've become a symbol
+                of automotive prestige rather than a practical daily choice.</p>
+            </div>
+            <div>
+              <figure class="figure">
+                <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari_V12_engine.jpg" alt="A Ferrari V12 engine">
+                <figcaption>A naturally aspirated Ferrari V12 engine</figcaption>
+              </figure>
+              <div class="spec-list" style="margin-top:14px;">
+                <div><b>Bank angle</b><span>Commonly 60°</span></div>
+                <div><b>Character</b><span>Silky, high revving, refined</span></div>
+                <div><b>Found in</b><span>Ferrari, Lamborghini, Rolls Royce flagships</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- W16 -->
+      <div class="tl-item reveal">
+        <div class="tl-cyl mono">W16</div>
+        <div class="tl-card">
+          <span class="tag">The outlier two V8s fused together</span>
+          <h3>W16</h3>
+          <div class="tl-grid">
+            <div>
+              <p>Sixteen-cylinder production engines are almost unheard of the rare exception is the Volkswagen
+                Group's 8.0-litre quad-turbo W16, built exclusively for the Bugatti Veyron and Chiron since 2005.
+                It's effectively two narrow-angle VR8 engines joined at a 90° angle on a shared crankshaft, four
+                turbochargers force feeding all sixteen cylinders at once.</p>
+              <p>In its most extreme Bugatti Bolide tune, the W16 produces roughly 1,825 horsepower a figure
+                that made hypercar top speeds of 300+ mph possible for the first time. Bugatti retired the W16
+                in 2024 after the Chiron Super Sport L'Ultime, closing out one of the strangest chapters in
+                engine history.</p>
+            </div>
+            <div>
+              <figure class="figure">
+                <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_W16.jpg" alt="Bugatti Veyron W16 quad-turbo engine">
+                <figcaption>The Bugatti/Volkswagen 8.0L quad turbo W16</figcaption>
+              </figure>
+              <div class="spec-list" style="margin-top:14px;">
+                <div><b>Configuration</b><span>Two VR8 banks at 90°</span></div>
+                <div><b>Forced induction</b><span>Four turbochargers</span></div>
+                <div><b>Found in</b><span>Bugatti Veyron &amp; Chiron only</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-tight dark">
+  <div class="wrap">
+    <div class="grid-2 reveal">
+      <div>
+        <h2 style="font-size:1.8rem;">Different architectures, one destination: the road.</h2>
+        <p style="color:#B7BCC1;">See exactly which cars carried each of these engines into the world and
+          which one earned its exhaust note.</p>
+      </div>
+      <div style="text-align:right;">
+        <a class="btn ignite" href="cars.html">Next: The Cars →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:14px;">
+    <span>THE ENGINE a tribute to the machines that move us</span>
+    <nav aria-label="Footer">
+      <a href="index.html">History</a> ·
+      <a href="evolution.html">Evolution</a> ·
+      <a href="cars.html">Cars</a> ·
+      <a href="game.html">Drift Lab</a>
+    </nav>
+    <span>02 / 04 Evolution</span>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Scroll back to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>

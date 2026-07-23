@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Own Engine Interactive 3D Engine Designer | The Engine</title>
+<meta name="description" content="Design your own engine: pick layout, cylinders, bore, stroke, compression, boost and materials. Watch it run in real-time 3D and get a live blueprint with dimensions, radius and angles, plus engineer tips on oil and metals.">
+<meta name="keywords" content="engine builder, engine designer, 3D engine simulator, engine blueprint, build your own engine, engine bore stroke calculator">
+<meta name="robots" content="index, follow">
+<meta name="author" content="The Engine">
+<link rel="canonical" href="https://your-domain.com/builder.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Engine">
+<meta property="og:title" content="Build Your Own Engine Interactive 3D Engine Designer">
+<meta property="og:description" content="Design your own engine and watch it run in real-time 3D, with a live blueprint and engineer tips on metals, oil and tolerances.">
+<meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari_V12_engine.jpg">
+<meta property="og:url" content="https://your-domain.com/builder.html">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build Your Own Engine Interactive 3D Engine Designer">
+<meta name="twitter:description" content="Design your own engine and watch it run in real-time 3D, with a live blueprint and engineer tips.">
+<meta name="twitter:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari_V12_engine.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="builder.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Engine Builder",
+  "applicationCategory": "EngineeringApplication",
+  "operatingSystem": "Any",
+  "description": "An interactive 3D tool for designing a custom engine configure layout, cylinders, bore, stroke, compression and materials, view a live blueprint and get engineering tips.",
+  "isAccessibleForFree": true,
+  "url": "https://your-domain.com/builder.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"History","item":"https://your-domain.com/index.html"},
+    {"@type":"ListItem","position":2,"name":"Evolution","item":"https://your-domain.com/evolution.html"},
+    {"@type":"ListItem","position":3,"name":"Cars","item":"https://your-domain.com/cars.html"},
+    {"@type":"ListItem","position":4,"name":"Drift Lab","item":"https://your-domain.com/game.html"},
+    {"@type":"ListItem","position":5,"name":"Build Your Engine","item":"https://your-domain.com/builder.html"}
+  ]
+}
+</script>
+</head>
+<body class="builder-page">
+
+<nav class="topnav">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> The Engine</div>
+    <div class="navlinks">
+      <a href="index.html">01 History</a>
+      <a href="evolution.html">02 Evolution</a>
+      <a href="cars.html">03 Cars</a>
+      <a href="game.html">04 Drift Lab</a>
+      <a href="builder.html" class="active">05 Builder</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="progress-rail"><div class="progress-fill"></div></div>
+
+<main>
+<header class="builder-hero">
+  <div class="blueprint"></div>
+  <div class="wrap">
+    <span class="eyebrow">Page 05 Build Your Own Engine</span>
+    <h1 style="font-size:clamp(2.2rem,5.5vw,3.6rem); max-width:20ch;">DESIGN IT. <em>RUN IT.</em> READ ITS BLUEPRINT.</h1>
+    <p class="hero-sub" style="margin-top:14px;">Choose a layout, set your bore and stroke, pick a block material and induction every change rebuilds
+      the engine in real 3D and rewrites the spec sheet on the right, with an engineer's notes on what to upgrade next.</p>
+  </div>
+</header>
+
+<div class="workspace">
+
+  <!-- CONTROLS -->
+  <section class="panel" aria-label="Engine configuration controls">
+    <div class="panel-head"><h3><span class="tag-dot"></span>CONFIGURE</h3></div>
+    <div class="controls-scroll">
+
+      <div class="ctrl-section">
+        <span class="sec-label">Layout &amp; Cylinders</span>
+        <div class="ctrl">
+          <label for="layoutSelect">Layout</label>
+          <select id="layoutSelect">
+            <option value="inline">Inline</option>
+            <option value="v">V</option>
+            <option value="flat">Flat (Boxer)</option>
+            <option value="w">W</option>
+          </select>
+        </div>
+        <div class="ctrl">
+          <label for="cylSelect">Cylinders</label>
+          <select id="cylSelect"></select>
+        </div>
+        <div class="ctrl">
+          <label for="bankAngle">Bank Angle <span class="val" id="bankAngleVal">60°</span></label>
+          <input type="range" id="bankAngle" min="15" max="150" step="1" value="60">
+          <div class="ctrl-note" id="bankAngleNote">Ideal for a V6 is close to 60° for smooth, even-firing balance.</div>
+        </div>
+      </div>
+
+      <div class="ctrl-section">
+        <span class="sec-label">Dimensions</span>
+        <div class="ctrl">
+          <label for="bore">Bore <span class="val" id="boreVal">86 mm</span></label>
+          <input type="range" id="bore" min="60" max="110" step="1" value="86">
+        </div>
+        <div class="ctrl">
+          <label for="stroke">Stroke <span class="val" id="strokeVal">86 mm</span></label>
+          <input type="range" id="stroke" min="55" max="100" step="1" value="86">
+        </div>
+        <div class="ctrl">
+          <label for="compRatio">Compression Ratio <span class="val" id="compRatioVal">10.5:1</span></label>
+          <input type="range" id="compRatio" min="7.5" max="14" step="0.1" value="10.5">
+        </div>
+      </div>
+
+      <div class="ctrl-section">
+        <span class="sec-label">Induction &amp; Redline</span>
+        <div class="ctrl">
+          <label for="induction">Induction</label>
+          <select id="induction">
+            <option value="na">Naturally Aspirated</option>
+            <option value="turbo">Turbocharged</option>
+            <option value="super">Supercharged</option>
+          </select>
+        </div>
+        <div class="ctrl">
+          <label for="boost">Boost <span class="val" id="boostVal">0 psi</span></label>
+          <input type="range" id="boost" min="0" max="30" step="1" value="0" disabled>
+        </div>
+        <div class="ctrl">
+          <label for="redline">Redline <span class="val" id="redlineVal">7000 rpm</span></label>
+          <input type="range" id="redline" min="5000" max="11000" step="100" value="7000">
+        </div>
+      </div>
+
+      <div class="ctrl-section">
+        <span class="sec-label">Materials &amp; Fuel</span>
+        <div class="ctrl">
+          <label for="material">Block Material</label>
+          <select id="material">
+            <option value="cast_iron">Cast Iron</option>
+            <option value="aluminum" selected>Aluminum Alloy</option>
+            <option value="forged_sleeved">Forged Steel Sleeved</option>
+            <option value="titanium_composite">Titanium Composite</option>
+          </select>
+        </div>
+        <div class="ctrl">
+          <label for="fuel">Fuel Type</label>
+          <select id="fuel">
+            <option value="87">Regular · 87 Octane</option>
+            <option value="91" selected>Premium · 91–93 Octane</option>
+            <option value="e85">E85 Ethanol</option>
+            <option value="diesel">Diesel</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ctrl-section">
+        <span class="sec-label">Quick Presets</span>
+        <div class="preset-row">
+          <button class="preset-btn" data-preset="economy">Economy I4</button>
+          <button class="preset-btn" data-preset="muscle">Muscle V8</button>
+          <button class="preset-btn" data-preset="exotic">Exotic V12</button>
+          <button class="preset-btn" data-preset="rally">Rally Flat-4</button>
+          <button class="preset-btn" data-preset="hyper">Hypercar W16</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3D VIEWPORT -->
+  <section class="panel viewport-wrap" aria-label="3D engine simulation">
+    <canvas id="engineCanvas"></canvas>
+    <div class="viewport-hud">
+      <div class="vh-top">
+        <div class="vh-stat"><div class="l">Displacement</div><div class="v" id="statDisp">2.0 L</div></div>
+        <div class="vh-stat"><div class="l">Est. Power</div><div class="v ignite" id="statHP">150 hp</div></div>
+        <div class="vh-stat"><div class="l">Est. Torque</div><div class="v amber" id="statTQ">145 lb-ft</div></div>
+        <div class="vh-stat"><div class="l">Live RPM</div><div class="v" id="statRPM">800</div></div>
+      </div>
+      <div class="vh-hint">Drag to orbit · Scroll to zoom</div>
+      <div class="vh-bottom">
+        <div class="rpm-rig">
+          <div class="l"><span>Throttle / RPM</span><span id="rpmSliderVal">800 rpm</span></div>
+          <input type="range" id="rpmSlider" min="800" max="11000" step="50" value="800">
+        </div>
+        <div class="vh-btns">
+          <button class="vh-icon-btn" id="autoRevBtn" aria-label="Toggle auto-rev" title="Auto-rev">▶</button>
+          <button class="vh-icon-btn" id="camResetBtn" aria-label="Reset camera" title="Reset camera">⟲</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLUEPRINT -->
+  <section class="panel" aria-label="Live engine blueprint and engineer tips">
+    <div class="panel-head"><h3><span class="tag-dot"></span>BLUEPRINT</h3></div>
+    <div class="blueprint-scroll">
+
+      <div class="bp-spec" id="bpSpec"></div>
+
+      <div class="bp-diagram">
+        <svg id="svgBore" viewBox="0 0 280 160"></svg>
+        <div class="cap">TOP VIEW — BORE DIAMETER</div>
+      </div>
+      <div class="bp-diagram">
+        <svg id="svgStroke" viewBox="0 0 280 200"></svg>
+        <div class="cap">SIDE VIEW — STROKE &amp; CRANK RADIUS</div>
+      </div>
+      <div class="bp-diagram" id="bankDiagramWrap">
+        <svg id="svgBank" viewBox="0 0 280 170"></svg>
+        <div class="cap">BANK ANGLE</div>
+      </div>
+
+      <span class="tips-head">Engineer's Tips</span>
+      <div id="tipsList"></div>
+
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:14px;">
+    <span>THE ENGINE a tribute to the machines that move us</span>
+    <nav aria-label="Footer">
+      <a href="index.html">History</a> ·
+      <a href="evolution.html">Evolution</a> ·
+      <a href="cars.html">Cars</a> ·
+      <a href="game.html">Drift Lab</a> ·
+      <a href="builder.html">Builder</a>
+    </nav>
+    <span>05 / 05 Builder</span>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Scroll back to top">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+<script src="builder.js"></script>
+</body>
+</html>
