@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact The Engine | The Engine</title>
+<meta name="description" content="Get in touch with The Engine send a correction a question or just tell us which engine layout is your favorite.">
+<meta name="keywords" content="contact the engine, engine site contact">
+<meta name="robots" content="index, follow">
+<meta name="author" content="The Engine">
+<link rel="canonical" href="https://www.engineinfo.in/contact.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Engine">
+<meta property="og:title" content="Contact The Engine">
+<meta property="og:description" content="Send a correction, a question, or general feedback.">
+<meta property="og:url" content="https://www.engine.in/contact.html">
+<meta property="og:locale" content="en_US">
+<meta name="google-adsense-account" content="ca-pub-7299820099384079">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .legal main .wrap{ max-width:720px; }
+  .legal p{ color:var(--ink-soft); }
+  .contact-form{ margin-top:20px; display:grid; gap:16px; }
+  .contact-form label{ font-family:var(--mono); font-size:.76rem; text-transform:uppercase; letter-spacing:.08em; color:var(--steel); display:block; margin-bottom:6px; }
+  .contact-form input, .contact-form textarea{
+    width:100%; border:1px solid var(--steel-line); background:#fff; color:var(--ink);
+    font-family:var(--body); font-size:1rem; padding:12px 14px; border-radius:2px;
+  }
+  .contact-form input:focus, .contact-form textarea:focus{ outline:2px solid var(--ignite); outline-offset:1px; border-color:var(--ignite); }
+  .contact-form textarea{ min-height:150px; resize:vertical; }
+  .contact-form button{
+    justify-self:start; font-family:var(--display); font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+    font-size:.92rem; padding:13px 28px; border-radius:2px; background:var(--ignite); border:1px solid var(--ignite);
+    color:#fff; cursor:pointer; transition:transform .15s, background .15s;
+  }
+  .contact-form button:hover{ transform:translateY(-2px); background:var(--ignite-dim); }
+  .contact-note{ font-family:var(--mono); font-size:.78rem; color:var(--steel); margin-top:12px; }
+  .direct-email{
+    margin-top:44px; padding:22px 24px; border:1px solid var(--steel-line); background:#fff;
+    display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
+  }
+  .direct-email b{ font-family:var(--display); text-transform:uppercase; font-size:1.05rem; display:block; }
+  .direct-email a{ color:var(--ignite-dim); font-family:var(--mono); }
+  .direct-email a:hover{ color:var(--ignite); }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7299820099384079"
+     crossorigin="anonymous"></script>
+</head>
+<body class="legal">
+
+<nav class="topnav">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> The Engine</div>
+    <div class="navlinks">
+      <a href="index.html">01 History</a>
+      <a href="evolution.html">02 Evolution</a>
+      <a href="cars.html">03 Cars</a>
+      <a href="game.html">04 Drift Lab</a>
+      <a href="builder.html">05 Builder</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="progress-rail"><div class="progress-fill"></div></div>
+
+<main>
+<header class="hero" style="padding:90px 0 60px;">
+  <div class="blueprint"></div>
+  <div class="wrap">
+    <span class="eyebrow">Get In Touch</span>
+    <h1 style="font-size:clamp(2.2rem,5.5vw,3.6rem);">SAY <em>SOMETHING</em></h1>
+    <p class="hero-sub">Spotted a wrong spec got a source to share or just want to argue about V8's versus V12's?
+      This goes straight to a real inbox not a support queue.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+
+    <form class="contact-form" id="contactForm">
+      <div>
+        <label for="cf-name">Your name</label>
+        <input type="text" id="cf-name" name="name" required>
+      </div>
+      <div>
+        <label for="cf-email">Your email</label>
+        <input type="email" id="cf-email" name="email" required>
+      </div>
+      <div>
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+      <p class="contact-note">This opens your default email app with the message pre-filled nothing is stored or
+        sent through this site itself.</p>
+    </form>
+
+    <div class="direct-email">
+      <div>
+        <b>Prefer email directly?</b>
+        <span style="font-family:var(--mono); font-size:.85rem; color:var(--steel);">No form, no fuss.</span>
+      </div>
+      <a href="mailto:sohamkulkarni1005@gmail.com">sohamkulkarni1005@gmail.com</a>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; flex-direction:column; gap:14px; width:100%;">
+    <div style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:14px;">
+      <span>THE ENGINE a tribute to the machines that move us</span>
+      <nav aria-label="Footer">
+        <a href="index.html">History</a> ·
+        <a href="evolution.html">Evolution</a> ·
+        <a href="cars.html">Cars</a> ·
+        <a href="game.html">Drift Lab</a> ·
+        <a href="builder.html">Builder</a>
+      </nav>
+      <span>Contact</span>
+    </div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap; border-top:1px dashed var(--steel-line); padding-top:14px;">
+      <a href="about.html">About</a> ·
+      <a href="contact.html">Contact</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Scroll back to top">↑</button>
+
+<script src="main.js"></script>
+<script src="consent.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cf-name').value;
+    var email = document.getElementById('cf-email').value;
+    var message = document.getElementById('cf-message').value;
+    var subject = encodeURIComponent('Message from ' + name + ' via The Engine');
+    var body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+    window.location.href = 'mailto:sohamkulkarni1005@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
